@@ -1,16 +1,22 @@
 adding solutions everyday >_<
   
 # Codeforces
-  
+
+ 
+<br />
   
 # CSES
 
-## Introductory Problems
-  
-  
-#USACO  
+### Introductory Problems
 
-### USACO Bronze
+<br />
+  
+# USACO  
 
-  [Shell Game](https://github.com/ameywtf/cp/blob/c8cfc95ce4f53f5f295dd77dec6a2b50713b9d66/usaco/bronze/1%20-%20Shell%20Game/ShellGame.cpp)  
-  [Mixing Milk](https://github.com/ameywtf/cp/blob/c8cfc95ce4f53f5f295dd77dec6a2b50713b9d66/usaco/bronze/2%20-%20Mixing%20Milk/MixingMilk.cpp)  
+### USACO Bronze  
+
+[Shell Game](https://github.com/ameywtf/cp/blob/c8cfc95ce4f53f5f295dd77dec6a2b50713b9d66/usaco/bronze/1%20-%20Shell%20Game/ShellGame.cpp)  
+[Mixing Milk](https://github.com/ameywtf/cp/blob/c8cfc95ce4f53f5f295dd77dec6a2b50713b9d66/usaco/bronze/2%20-%20Mixing%20Milk/MixingMilk.cpp)  
+
+
+<br />
