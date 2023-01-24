@@ -6,8 +6,6 @@ int main() {
     freopen("blist.in", "r", stdin);
     freopen("blist.out", "w", stdout);
 
-    // Time Complexity - O(n + t)
-
     int n;
     cin >> n;
 
