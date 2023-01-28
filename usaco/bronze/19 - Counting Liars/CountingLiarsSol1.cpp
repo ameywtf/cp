@@ -1,5 +1,5 @@
-// this is my solution, has a ridiculous time complexity O(n^2 log n) but it is what it is, 
-// for O(n log n) solution see CountingLiarsSol2
+// this is my solution, has a ridiculous time complexity O(n^2 log n) but it is what it is,
+// for a solution w/ O(n log n) solution see CountingLiarsSol2.cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -29,7 +29,7 @@ int main() {
     }
 
     sort(c.begin(), c.end());
-
+    
     cout << c.back() << '\n';
 
     return 0;
