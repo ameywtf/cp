@@ -3,41 +3,31 @@
 using namespace std;
 
 int main() {
+
     int n;
     cin >> n;
-
-    int ans = n;
-
-    vector<pair<int, char>> v(n);
-    for (int i = 0; i < n; i++) {
-        cin >> v[i].second >> v[i].first;
+    vector<pair<char, int>> v(n+1);
+    for(int i = 1; i <= n; i++) {
+        cin >> v[i].first >> v[i].second;
     }
 
-    sort(v.begin(), v.end());
 
-    vector<int> l(n);
-    for (int i = 1; i < n; i++) {
-        l[i] += l[i - 1];
-
-        if (v[i - 1].second == 'L' && v[i].first > v[i - 1].first) {
-            l[i]++;
+    int minLiars = 1e9;
+    for(int i = 1; i <= n; i++) {
+        int currLiars = 0;
+        for(int j = 1; j <=n; j++) {
+            if(v[i].first == 'G' && v[i].second > i) {
+                currLiars++;
+            } else if(v[i].first = 'L' && v[i].second < i) {
+                currLiars++;
+            }
         }
+        minLiars = min(currLiars, minLiars);
     }
 
-    vector<int> r(n);
-    for (int i = n - 2; i >= 0; i--) {
-        r[i] += r[i + 1];
-
-        if (v[i + 1].second == 'G' && v[i].first < v[i + 1].first) {
-            r[i]++;
-        }
-    }
-
-    for (int i = 0; i < n; i++) {
-        ans = min(ans, l[i] + r[i]);
-    }
-
-    cout << ans << '\n';
+    cout << minLiars << '\n';
 
     return 0;
 }
+
+//g++ -std=c++17 -O2 name.cpp -o name -Wall
